@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"lora_sender\startup_stm32f103xb.o"
+"lora_sender\main.o"
+"lora_sender\stm32f1xx_it.o"
+"lora_sender\stm32f1xx_hal_msp.o"
+"lora_sender\stm32f1xx_hal_gpio_ex.o"
+"lora_sender\stm32f1xx_hal_spi.o"
+"lora_sender\stm32f1xx_hal.o"
+"lora_sender\stm32f1xx_hal_rcc.o"
+"lora_sender\stm32f1xx_hal_rcc_ex.o"
+"lora_sender\stm32f1xx_hal_gpio.o"
+"lora_sender\stm32f1xx_hal_dma.o"
+"lora_sender\stm32f1xx_hal_cortex.o"
+"lora_sender\stm32f1xx_hal_pwr.o"
+"lora_sender\stm32f1xx_hal_flash.o"
+"lora_sender\stm32f1xx_hal_flash_ex.o"
+"lora_sender\stm32f1xx_hal_exti.o"
+"lora_sender\stm32f1xx_hal_tim.o"
+"lora_sender\stm32f1xx_hal_tim_ex.o"
+"lora_sender\stm32f1xx_hal_uart.o"
+"lora_sender\system_stm32f1xx.o"
+"lora_sender\lora.o"
+"lora_sender\dht.o"
+--strict --scatter "LoRa_sender\LoRa_sender.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LoRa_sender.map" -o LoRa_sender\LoRa_sender.axf
